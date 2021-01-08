@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="3"
+        android:background="@color/white"
+        android:id="@+id/main"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="40dp"
+                android:background="@drawable/menu"
+                android:orientation="vertical"
+                android:id="@+id/spinerlay"
+                android:layout_height="40dp">
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content">
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1.7"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/ley"
+            android:orientation="vertical"
+            android:layout_height="60dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:gravity="right"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="right"
+                />
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/notification"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+<!--    <View-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="1dp"-->
+<!--        android:background="@color/grey_dark_pro"-->
+<!--        android:layout_below="@id/main"-->
+<!--        />-->
+
+</RelativeLayout>
