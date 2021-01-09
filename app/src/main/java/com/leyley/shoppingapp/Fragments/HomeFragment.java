@@ -11,13 +11,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.leyley.shoppingapp.BestSell;
-import com.leyley.shoppingapp.Features;
+import com.leyley.shoppingapp.Activites.BestSell;
+import com.leyley.shoppingapp.Activites.Categories;
+import com.leyley.shoppingapp.Activites.Features;
 import com.leyley.shoppingapp.R;
 
 public class HomeFragment extends Fragment {
 
-    TextView featureseeall,bestsellseeall;
+    TextView featureseeall,bestsellseeall,catsseeall;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +47,14 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        catsseeall=view.findViewById(R.id.catsseeall);
+        catsseeall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoseecat();
+            }
+        });
+
         return view;
     }
 
@@ -54,13 +63,17 @@ public class HomeFragment extends Fragment {
         Intent i = new Intent(getActivity(), Features.class);
         startActivity(i);
         ((Activity) getActivity()).overridePendingTransition(0, 0);
-
     }
     private void gotobestsell () {
 
         Intent i = new Intent(getActivity(), BestSell.class);
         startActivity(i);
         ((Activity) getActivity()).overridePendingTransition(0, 0);
+    }
+    private void gotoseecat () {
 
+        Intent i = new Intent(getActivity(), Categories.class);
+        startActivity(i);
+        ((Activity) getActivity()).overridePendingTransition(0, 0);
     }
 }

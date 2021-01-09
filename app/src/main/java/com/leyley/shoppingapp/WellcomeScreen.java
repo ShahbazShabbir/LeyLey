@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.leyley.shoppingapp.Activites.Login;
+import com.leyley.shoppingapp.Activites.Signup;
 import com.skydoves.elasticviews.ElasticLayout;
 
 public class WellcomeScreen extends AppCompatActivity {
@@ -21,7 +23,7 @@ public class WellcomeScreen extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(WellcomeScreen.this,Login.class);
+                Intent intent=new Intent(WellcomeScreen.this, Login.class);
                 startActivity(intent);
             }
         });
@@ -29,7 +31,7 @@ public class WellcomeScreen extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(WellcomeScreen.this,Signup.class);
+                Intent intent=new Intent(WellcomeScreen.this, Signup.class);
                 startActivity(intent);
             }
         });

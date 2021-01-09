@@ -1,14 +1,16 @@
-package com.leyley.shoppingapp;
+package com.leyley.shoppingapp.Activites;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Cart extends AppCompatActivity {
+import com.leyley.shoppingapp.R;
+
+public class Notification extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cart);
+        setContentView(R.layout.activity_notification);
     }
 }

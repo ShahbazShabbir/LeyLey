@@ -57,10 +57,13 @@
                     android:paddingBottom="5dp"/>
             </RelativeLayout>
 
-            <LinearLayout
+            <HorizontalScrollView
                 android:layout_width="wrap_content"
-                android:orientation="horizontal"
                 android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
             <include
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -73,7 +76,20 @@
                     android:id="@+id/searchbar"
                     android:layout_margin="10dp"
                     layout="@layout/item_rv_cat" />
-            </LinearLayout>
+                    <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/searchbar"
+                    android:layout_margin="10dp"
+                    layout="@layout/item_rv_cat" />
+                    <include
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/searchbar"
+                        android:layout_margin="10dp"
+                        layout="@layout/item_rv_cat" />
+                </LinearLayout>
+            </HorizontalScrollView>
 
 <!--            <androidx.recyclerview.widget.RecyclerView-->
 <!--                android:id="@+id/rvcategory"-->
@@ -123,6 +139,9 @@
                     android:paddingBottom="5dp"/>
             </RelativeLayout>
 
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:orientation="horizontal"
@@ -139,7 +158,20 @@
                     android:id="@+id/searchbar"
                     android:layout_margin="10dp"
                     layout="@layout/item_rv_feature" />
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/searchbar"
+                    android:layout_margin="10dp"
+                    layout="@layout/item_rv_feature" />
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/searchbar"
+                    android:layout_margin="10dp"
+                    layout="@layout/item_rv_feature" />
             </LinearLayout>
+            </HorizontalScrollView>
 
             <!--            <androidx.recyclerview.widget.RecyclerView-->
             <!--                android:id="@+id/rvcategory"-->
@@ -189,6 +221,9 @@
                     android:paddingBottom="5dp"/>
             </RelativeLayout>
 
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:orientation="horizontal"
@@ -205,7 +240,20 @@
                     android:id="@+id/searchbar"
                     android:layout_margin="10dp"
                     layout="@layout/item_rv_bestsell" />
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/searchbar"
+                    android:layout_margin="10dp"
+                    layout="@layout/item_rv_bestsell" />
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/searchbar"
+                    android:layout_margin="10dp"
+                    layout="@layout/item_rv_bestsell" />
             </LinearLayout>
+            </HorizontalScrollView>
 
             <!--            <androidx.recyclerview.widget.RecyclerView-->
             <!--                android:id="@+id/rvcategory"-->

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".Login">
+    tools:context=".Activites.Login">
 
     <ImageView
         android:layout_width="60dp"
@@ -52,7 +52,6 @@
             android:layout_marginTop="7dp"
             android:textColor="@color/black"
             android:textColorHint="@color/grey_dark_pro"
-            android:hint="Enter Email"
             android:inputType="textEmailAddress"
             android:textCursorDrawable="@drawable/grey_cursor_color"
             />
@@ -80,7 +79,6 @@
             android:textColor="@color/black"
             android:textColorHint="@color/grey_dark_pro"
             android:textCursorDrawable="@drawable/grey_cursor_color"
-            android:hint="Enter Password"
             android:inputType="textPassword"
             />
         <View

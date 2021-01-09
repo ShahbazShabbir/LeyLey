@@ -21,11 +21,11 @@
             android:layout_height="wrap_content">
 
             <LinearLayout
-                android:layout_width="50dp"
+                android:layout_width="40dp"
                 android:background="@drawable/iconback"
                 android:orientation="vertical"
                 android:id="@+id/backbtn"
-                android:layout_height="50dp">
+                android:layout_height="35dp">
 
             </LinearLayout>
 
@@ -44,18 +44,27 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_weight="1.5"
+            android:layout_weight="1.7"
             android:layout_gravity="center"
             android:gravity="center"
-            android:background="@drawable/ley"
             android:orientation="vertical"
             android:layout_height="60dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/ley"
+                android:orientation="vertical"
+                android:layout_height="60dp">
+
+            </LinearLayout>
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_weight="0.8"
+            android:layout_weight="0.6"
             android:gravity="right"
             android:paddingRight="5dp"
             android:paddingTop="5dp"
@@ -63,16 +72,12 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_gravity="right"
-                />
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:layout_gravity="center"
                 android:layout_marginRight="10dp"
                 android:src="@drawable/notification"
+                android:visibility="gone"
                 />
 
         </LinearLayout>

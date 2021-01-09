@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".Signup">
+    tools:context=".Activites.Signup">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -60,7 +60,6 @@
                     android:layout_marginTop="7dp"
                     android:textColor="@color/black"
                     android:textColorHint="@color/grey_dark_pro"
-                    android:hint="Enter Name"
                     android:inputType="text"
                     android:textCursorDrawable="@drawable/grey_cursor_color"
                     />
@@ -86,7 +85,6 @@
                     android:layout_marginTop="7dp"
                     android:textColor="@color/black"
                     android:textColorHint="@color/grey_dark_pro"
-                    android:hint="Enter Email"
                     android:inputType="textEmailAddress"
                     android:textCursorDrawable="@drawable/grey_cursor_color"
                     />
@@ -114,7 +112,6 @@
                     android:textColor="@color/black"
                     android:textColorHint="@color/grey_dark_pro"
                     android:textCursorDrawable="@drawable/grey_cursor_color"
-                    android:hint="Enter Password"
                     android:inputType="textPassword"
                     />
                 <View

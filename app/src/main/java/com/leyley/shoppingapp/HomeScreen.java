@@ -1,18 +1,19 @@
 package com.leyley.shoppingapp;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.google.android.material.navigation.NavigationView;
+import com.leyley.shoppingapp.Activites.Notification;
 import com.leyley.shoppingapp.Fragments.CartFragment;
 import com.leyley.shoppingapp.Fragments.HomeFragment;
 import com.leyley.shoppingapp.Fragments.MyOrdersFragment;
@@ -22,6 +23,7 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
 
     private DrawerLayout drawer;
     LinearLayout spinerlay;
+    ImageView notification;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,15 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
             @Override
             public void onClick(View v) {
                 drawer.openDrawer(GravityCompat.START);
+            }
+        });
+
+        notification=findViewById(R.id.notification);
+        notification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeScreen.this, Notification.class);
+                startActivity(intent);
             }
         });
 //        Toolbar toolbar = findViewById(R.id.toolbar);

@@ -1,10 +1,12 @@
-package com.leyley.shoppingapp;
+package com.leyley.shoppingapp.Activites;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
+
+import com.leyley.shoppingapp.R;
 
 public class BestSell extends AppCompatActivity {
 

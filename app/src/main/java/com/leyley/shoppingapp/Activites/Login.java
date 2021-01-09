@@ -1,4 +1,4 @@
-package com.leyley.shoppingapp;
+package com.leyley.shoppingapp.Activites;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,17 +8,19 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.leyley.shoppingapp.HomeScreen;
+import com.leyley.shoppingapp.R;
 import com.skydoves.elasticviews.ElasticLayout;
 
-public class Signup extends AppCompatActivity {
-    TextView login;
-    ElasticLayout signup;
+public class Login extends AppCompatActivity {
+    TextView signup;
+    ElasticLayout login;
     ImageView backbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup);
+        setContentView(R.layout.activity_login);
 
         Initialize();
 
@@ -31,18 +33,20 @@ public class Signup extends AppCompatActivity {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(Signup.this,HomeScreen.class);
+                Intent intent=new Intent(Login.this,Signup.class);
                 startActivity(intent);
             }
         });
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(Signup.this,Login.class);
+                Intent intent=new Intent(Login.this, HomeScreen.class);
                 startActivity(intent);
             }
         });
+
     }
+
     private void Initialize() {
 
         signup=findViewById(R.id.signup);

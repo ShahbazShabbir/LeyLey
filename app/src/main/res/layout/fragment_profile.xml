@@ -1,14 +1,214 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Fragments.ProfileFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textAlignment="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="26dp"
+            android:textColor="@color/black"
+            android:id="@+id/txt1"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/txt1"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="18dp"
+                android:textColor="@color/grey_dark_pro"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey_dark_pro"
+                android:inputType="text"
+                android:textCursorDrawable="@drawable/grey_cursor_color"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_dark_pro"
+                android:layout_marginTop="3dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textSize="18dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/grey_dark_pro"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey_dark_pro"
+                android:inputType="text"
+                android:textCursorDrawable="@drawable/grey_cursor_color"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_dark_pro"
+                android:layout_marginTop="3dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="City"
+                android:textSize="18dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/grey_dark_pro"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey_dark_pro"
+                android:textCursorDrawable="@drawable/grey_cursor_color"
+                android:inputType="text"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_dark_pro"
+                android:layout_marginTop="3dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textSize="18dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/grey_dark_pro"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey_dark_pro"
+                android:inputType="text"
+                android:textCursorDrawable="@drawable/grey_cursor_color"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_dark_pro"
+                android:layout_marginTop="3dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="18dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/grey_dark_pro"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey_dark_pro"
+                android:inputType="textEmailAddress"
+                android:textCursorDrawable="@drawable/grey_cursor_color"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_dark_pro"
+                android:layout_marginTop="3dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:textSize="18dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/grey_dark_pro"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey_dark_pro"
+                android:textCursorDrawable="@drawable/grey_cursor_color"
+                android:inputType="number"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_dark_pro"
+                android:layout_marginTop="3dp"
+                />
+
+            <com.skydoves.elasticviews.ElasticLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/btnbg1"
+                android:gravity="center"
+                android:id="@+id/signup"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Update"
+                    android:textAlignment="center"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    />
+            </com.skydoves.elasticviews.ElasticLayout>
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
