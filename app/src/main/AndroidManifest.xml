@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LeyLey">
-        <activity android:name=".Activites.Payment"></activity>
+        <activity android:name=".Activites.AddAddress"></activity>
+        <activity android:name=".Activites.Payment" />
         <activity android:name=".Activites.Categories" />
         <activity android:name=".Activites.OrderSubmited" />
         <activity android:name=".Activites.Notification" />

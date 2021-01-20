@@ -12,7 +12,7 @@ import com.leyley.shoppingapp.R;
 
 public class MyOrdersFragment extends Fragment {
 
-
+    int j = 1;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

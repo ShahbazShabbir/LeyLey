@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 import com.leyley.shoppingapp.Activites.Notification;
@@ -24,6 +25,9 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
     private DrawerLayout drawer;
     LinearLayout spinerlay;
     ImageView notification;
+    int i = 0, j = 1;
+    private long backPressedTime;
+    private Toast backToast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,7 +100,15 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            if (backPressedTime + 2000 > System.currentTimeMillis()) {
+                backToast.cancel();
+                super.onBackPressed();
+                return;
+            } else {
+                backToast = Toast.makeText(getBaseContext(), "Press again to exit", Toast.LENGTH_SHORT);
+                backToast.show();
+            }
+            backPressedTime = System.currentTimeMillis();
         }
     }
 }

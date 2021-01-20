@@ -2,23 +2,19 @@ package com.leyley.shoppingapp.Activites;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
-import com.leyley.shoppingapp.HomeScreen;
 import com.leyley.shoppingapp.R;
-import com.skydoves.elasticviews.ElasticLayout;
 
-public class Payment extends AppCompatActivity {
+public class AddAddress extends AppCompatActivity {
     LinearLayout backbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_payment);
+        setContentView(R.layout.activity_add_address);
 
         backbtn=findViewById(R.id.backbtn);
         backbtn.setOnClickListener(new View.OnClickListener() {
@@ -27,5 +23,6 @@ public class Payment extends AppCompatActivity {
                 finish();
             }
         });
+
     }
 }

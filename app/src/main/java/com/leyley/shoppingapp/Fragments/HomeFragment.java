@@ -76,4 +76,5 @@ public class HomeFragment extends Fragment {
         startActivity(i);
         ((Activity) getActivity()).overridePendingTransition(0, 0);
     }
+    
 }

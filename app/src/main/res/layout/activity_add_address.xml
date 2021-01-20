@@ -1,25 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".Fragments.ProfileFragment">
+    tools:context=".Activites.AddAddress">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchbar"
+            layout="@layout/topbaractivity" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Profile"
+            android:text="Add Address"
             android:textAlignment="center"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="20dp"
             android:textSize="26dp"
             android:textColor="@color/black"
             android:id="@+id/txt1"
+            android:layout_below="@id/searchbar"
             />
         <LinearLayout
             android:layout_width="match_parent"
@@ -31,30 +40,6 @@
             android:layout_marginBottom="20dp"
             android:layout_height="wrap_content">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Name"
-                android:textSize="16dp"
-                android:textColor="@color/grey_dark_pro"
-                />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@android:color/transparent"
-                android:layout_marginTop="5dp"
-                android:textColor="@color/black"
-                android:textColorHint="@color/grey_dark_pro"
-                android:inputType="text"
-                android:textSize="16dp"
-                android:textCursorDrawable="@drawable/grey_cursor_color"
-                />
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/grey_dark_pro"
-                android:layout_marginTop="3dp"
-                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -111,7 +96,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Gender"
+                android:text="Postal Code"
                 android:textSize="16dp"
                 android:layout_marginTop="20dp"
                 android:textColor="@color/grey_dark_pro"
@@ -133,33 +118,6 @@
                 android:background="@color/grey_dark_pro"
                 android:layout_marginTop="3dp"
                 />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Email"
-                android:textSize="16dp"
-                android:layout_marginTop="20dp"
-                android:textColor="@color/grey_dark_pro"
-                />
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@android:color/transparent"
-                android:layout_marginTop="5dp"
-                android:textColor="@color/black"
-                android:textSize="16dp"
-                android:textColorHint="@color/grey_dark_pro"
-                android:inputType="textEmailAddress"
-                android:textCursorDrawable="@drawable/grey_cursor_color"
-                />
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/grey_dark_pro"
-                android:layout_marginTop="3dp"
-                />
-
 
             <TextView
                 android:layout_width="wrap_content"
@@ -200,7 +158,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Update"
+                    android:text="Add"
                     android:textAlignment="center"
                     android:textSize="22dp"
                     android:textStyle="bold"
