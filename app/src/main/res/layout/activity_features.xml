@@ -33,6 +33,7 @@
         android:layout_width="match_parent"
         android:orientation="horizontal"
         android:weightSum="2"
+        android:id="@+id/showproduct"
         android:layout_height="wrap_content">
 
 
