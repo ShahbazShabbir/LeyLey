@@ -20,7 +20,15 @@
             android:layout_width="230dp"
             android:layout_height="230dp"
             android:layout_gravity="center"
+            android:visibility="gone"
             android:src="@drawable/ordersubmited"
+            />
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            app:lottie_rawRes="@raw/ordercompleted"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
             />
         <TextView
             android:layout_width="wrap_content"

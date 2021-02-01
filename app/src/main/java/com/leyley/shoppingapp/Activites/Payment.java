@@ -14,6 +14,7 @@ import com.skydoves.elasticviews.ElasticLayout;
 
 public class Payment extends AppCompatActivity {
     LinearLayout backbtn;
+    ElasticLayout submitorder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,15 @@ public class Payment extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
+            }
+        });
+
+        submitorder=findViewById(R.id.submitorder);
+        submitorder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Payment.this,OrderSubmited.class);
+                startActivity(intent);
             }
         });
     }

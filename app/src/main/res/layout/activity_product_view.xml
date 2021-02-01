@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activites.ProductView">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/productimg"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/dummyimage"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/productname"
+            android:text="HP Laptop"
+            android:layout_margin="10dp"
+            android:layout_below="@id/productimg"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/productprice"
+                android:text="23500 PKR"
+                android:layout_margin="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/productimg"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/appcolorbg"
+                android:layout_below="@id/productprice"
+                android:layout_margin="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/productname"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Details"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/grey_dark_pro_extra"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Core i5\n3rd Genration\nRAM 8GB\n128 SSD\n500 HDD\nBattery Level 100% "
+                    android:layout_margin="10dp"
+                    android:textColor="@color/grey_dark_pro"
+                    android:textStyle="bold"
+                    android:textSize="14dp"
+                    />
+            </LinearLayout>
+
+
+
+
+</RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:layout_height="wrap_content">
+
+        <com.skydoves.elasticviews.ElasticLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/btnbg1"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:id="@+id/addtocart"
+            android:layout_below="@id/radiobtn"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add To Cart"
+                android:textAlignment="center"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/icon_cart_white"
+                android:drawablePadding="30dp"
+                />
+        </com.skydoves.elasticviews.ElasticLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

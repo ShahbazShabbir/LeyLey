@@ -7,10 +7,12 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
@@ -28,11 +30,21 @@ public class HomeScreen extends AppCompatActivity implements NavigationView.OnNa
     int i = 0, j = 1;
     private long backPressedTime;
     private Toast backToast;
+    RelativeLayout loading;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
+
+        loading=findViewById(R.id.loading);
+        loading.setVisibility(View.VISIBLE);
+        new Handler().postDelayed(new Runnable(){
+            @Override
+            public void run() {
+                loading.setVisibility(View.GONE);
+            }
+        }, 2000);
 
         spinerlay=findViewById(R.id.spinerlay);
         spinerlay.setOnClickListener(new View.OnClickListener() {

@@ -27,6 +27,30 @@
 
     </LinearLayout>
 
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:background="@color/white"
+        android:id="@+id/loading"
+        android:visibility="gone"
+        android:layout_marginTop="65dp"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:lottie_rawRes="@raw/loading"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                />
+
+        </FrameLayout>
+    </RelativeLayout>
+
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"

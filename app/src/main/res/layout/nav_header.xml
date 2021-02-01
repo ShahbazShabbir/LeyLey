@@ -3,22 +3,33 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="@color/white"
+    android:background="@drawable/appcolorbg"
     android:gravity="bottom"
-    android:padding="15dp"
     android:layout_height="170dp">
 
     <ImageView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:src="@drawable/leyleylogohigh" />
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/drawerlogo" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="8dp"
         android:text="Leyley"
         android:textSize="24dp"
-        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/white"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/btnbg2"
+        android:layout_marginLeft="-5dp"
+        android:layout_marginRight="-5dp"
+        android:layout_marginTop="10dp"
+        />
 
 </LinearLayout>
